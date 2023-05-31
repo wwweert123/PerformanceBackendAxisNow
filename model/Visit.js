@@ -3,11 +3,19 @@ const Schema = mongoose.Schema;
 
 const visitSchema = new Schema({
     firstname: {
-        type: String,
+        type: Number,
         required: true,
     },
     lastname: {
-        type: String,
+        type: Number,
+        required: true,
+    },
+    lastname: {
+        type: Number,
+        required: true,
+    },
+    lastname: {
+        type: Number,
         required: true,
     },
 });
