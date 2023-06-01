@@ -21,6 +21,8 @@ app.use(cors(corsOptions));
 // built-in middleware for json (I only need JSON)
 app.use(express.json());
 
+app.use("/", require("./routes/root"));
+
 app.use("/performance", require("./routes/api/performance"));
 
 app.all("*", (req, res) => {
