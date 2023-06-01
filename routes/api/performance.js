@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const employeesController = require("../../controllers/performanceController");
+const performanceController = require("../../controllers/performanceController");
 
 router.route("/").post(performanceController.createVisit);
 
