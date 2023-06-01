@@ -6,13 +6,17 @@ const cors = require("cors");
 const credentials = require("./middleware/credentials");
 const mongoose = require("mongoose");
 const connectDB = require("./config/dbConn");
+const corsOptions = require("./config/corsOptions");
 const PORT = process.env.PORT || 3500;
 
 // Connect to MongoDB
 connectDB();
 
+//Credentials
+app.use(credentials);
+
 // Cross Origin Resource Sharing
-app.use(cors());
+app.use(cors(corsOptions));
 
 // built-in middleware for json (I only need JSON)
 app.use(express.json());
