@@ -32,4 +32,4 @@ const visitSchema = new Schema({
     },
 });
 
-module.exports = mongoose.model("Employee", visitSchema);
+module.exports = mongoose.model("Visit", visitSchema);
