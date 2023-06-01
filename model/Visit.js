@@ -2,19 +2,31 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const visitSchema = new Schema({
-    firstname: {
+    DNS: {
         type: Number,
         required: true,
     },
-    lastname: {
+    TCP: {
         type: Number,
         required: true,
     },
-    lastname: {
+    Request: {
         type: Number,
         required: true,
     },
-    lastname: {
+    Response: {
+        type: Number,
+        required: true,
+    },
+    Processing: {
+        type: Number,
+        required: true,
+    },
+    LoadEvent: {
+        type: Number,
+        required: true,
+    },
+    TotalTime: {
         type: Number,
         required: true,
     },
